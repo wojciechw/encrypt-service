@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message EncryptReq {
+    required bytes id = 1;
+    required bytes data = 2;
+}
+
+message EncryptRes {
+    required bytes key = 1; 
+}
+
+message DecryptReq {
+    required bytes id = 1;
+    required bytes key = 2;
+}
+
+message DecryptRes {
+    required bytes data = 1;
+}
+
